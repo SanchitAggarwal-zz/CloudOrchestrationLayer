@@ -1,0 +1,14 @@
+sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+sudo virsh -c qemu:///system list
+sudo chown root:libvirtd /dev/kvm
+sudo apt-get install virt-manager
+
+python Desktop/OrchestrationLayer/Src/Script.py 
+
+ssh creation
+ssh-keygen -t rsa
+
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@somehost
+
+ip
+$ ifconfig
